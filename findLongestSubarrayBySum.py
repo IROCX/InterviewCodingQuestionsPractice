@@ -17,7 +17,7 @@ i, j = 0, 0
 
 while j<l:
     sumx = sum(arr[i:j+1])
-    if sumx==s:
+    if sumx==s and maxlen<j-i+1:
         maxlen = j-i+1
         ans = [i, j]
     elif sumx>s:
