@@ -25,4 +25,7 @@ while j<l:
         i+=1
     j+=1
 
-print(maxlen, ans)
+if maxlen == 0:
+    print(-1)
+else:
+    print(maxlen, ans)
