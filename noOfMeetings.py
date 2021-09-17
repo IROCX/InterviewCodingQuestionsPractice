@@ -1,4 +1,5 @@
 # number of meating that can be held with given start and end timing provided that end of one meeting cannot be same as start of next meeting
+# Day 2/100
 
 n = int(input())
 start = list(map(int, input().split()))
