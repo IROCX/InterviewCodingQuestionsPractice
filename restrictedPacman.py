@@ -10,3 +10,5 @@ max_num = m*n - m - n
 # by Chicken McNugget Theorem
 # number of positive integers that can't be obtained by 2 given numbers 
 res = (m-1)*(n-1)//2
+
+print(max_num, res)
