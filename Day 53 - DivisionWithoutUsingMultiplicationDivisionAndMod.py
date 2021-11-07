@@ -34,6 +34,4 @@ if __name__ == "__main__":
         a = inp[0]
         b = inp[1]
 
-        ob = Solution()
-
-        print(ob.divide(a, b))
+        print(divide(a, b))
