@@ -7,7 +7,7 @@ def defval():
     return 0
 
 
-def isAnagram(self, a, b):
+def isAnagram(a, b):
     d = defaultdict(defval)
 
     for i in a:
