@@ -26,8 +26,7 @@ def dfs(head, x, count):
 def countSubtreesWithSumX(root, x):
 
     count = 0
-    sumx = 0
-    sumx, count = dfs(root, x, count)
+    _, count = dfs(root, x, count)
     return count
 
 
