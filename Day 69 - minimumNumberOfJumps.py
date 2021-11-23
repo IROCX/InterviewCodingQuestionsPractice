@@ -1,5 +1,5 @@
 # Given an array of N integers, find the minimum number of jumps to reach the end of the array (starting from the first element)
-# # Day 69/100
+# Day 69/100
 
 
 def minJumps(arr, n):
