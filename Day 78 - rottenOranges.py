@@ -4,6 +4,8 @@
 # 2 : Cells have rotten oranges
 # Determine what is the minimum time required to rot all oranges
 # A rotten orange at index [i,j] can rot other fresh orange at indexes [i-1,j], [i+1,j], [i,j-1], [i,j+1] (up, down, left and right) in unit time
+# Day 78/100
+
 
 from collections import deque
 
