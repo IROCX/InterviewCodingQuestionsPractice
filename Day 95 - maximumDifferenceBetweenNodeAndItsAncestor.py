@@ -3,26 +3,27 @@
 # Day 95 / 100
 
 
-def dfs(node, maxx):
+def dfs(node, maxx, ma):
 
-    if node.left:
+    if not node:
+        return
+    if ma - node.data > maxx[0]:
+        maxx[0] = ma - node.data
+    if ma < node.data:
+        ma = node.data
+    dfs(node.left, maxx, ma)
+    dfs(node.right, maxx, ma)
 
-        if node.data - node.left.data > maxx[0]:
-            maxx[0] = node.data - node.left.data
-        dfs(node.left, maxx)
 
-    if node.right:
-
-        if node.data - node.right.data > maxx[0]:
-            maxx[0] = node.data - node.right.data
-
-        dfs(node.right, maxx)
+# Function to return the maximum difference between any node and its ancestor.
+from sys import maxsize
 
 
 def maxDiff(root):
 
-    maxx = [-1]
-    dfs(root, maxx)
+    maxx = [(maxsize * -1) - 1]
+
+    dfs(root, maxx, (maxsize * -1) - 1)
     return maxx[0]
 
 
